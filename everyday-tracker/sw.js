@@ -1,6 +1,6 @@
 // sw.js — cache-first for the app shell, so the app works fully offline
 // after the first visit. All actual data lives in IndexedDB, not here.
-const CACHE_NAME = 'everyday-tracker-v2';
+const CACHE_NAME = 'everyday-tracker-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -25,6 +25,8 @@ const APP_SHELL = [
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-maskable-512.png',
+  './screenshots/desktop-wide.png',
+  './screenshots/mobile-narrow.png',
 ];
 
 self.addEventListener('install', (event) => {
